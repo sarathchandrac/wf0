@@ -1,0 +1,22 @@
+{
+  "name": "wf0",
+  "version": "1.0.0",
+  "description": "## Webpack workflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarathchandrac/wf0.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarathchandrac/wf0/issues"
+  },
+  "homepage": "https://github.com/sarathchandrac/wf0#readme",
+  "devDependencies": {
+    "webpack": "^3.11.0"
+  }
+}
