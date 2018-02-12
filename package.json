@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/sarathchandrac/wf0#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
     "css-loader": "^0.28.9",
     "eslint": "^4.17.0",
     "style-loader": "^0.20.1",
