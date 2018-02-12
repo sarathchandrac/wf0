@@ -4,7 +4,10 @@
   "description": "## Webpack workflow",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "prod": "webpack --watch",
+    "start": "webpack-dev-server --entry ./src/app.js --output-filename ./dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,10 @@
   },
   "homepage": "https://github.com/sarathchandrac/wf0#readme",
   "devDependencies": {
-    "webpack": "^3.11.0"
+    "css-loader": "^0.28.9",
+    "eslint": "^4.17.0",
+    "style-loader": "^0.20.1",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
   }
 }
