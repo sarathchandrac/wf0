@@ -1,3 +1,5 @@
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
   entry: './src/app.js',
   output: {
@@ -18,6 +20,27 @@ module.exports = {
           presets: ['es2015']
         }
       }
-    ]
-  }
+    ],
+    rules: [
+      { // regular css files
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          use: ['css-loader']
+        })
+      },
+      {
+        test: /\.(sass|scss)$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader']
+        })
+      }
+  ]
+  },
+  plugins: [
+    new ExtractTextPlugin({ // define where to save the file
+      filename: 'dist/style.css',
+      allChunks: true,
+    }),
+  ],
 }
