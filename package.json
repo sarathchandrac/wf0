@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "prod": "webpack --watch",
-    "start": "webpack-dev-server --entry ./src/app.js --output-filename ./dist/bundle.js"
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
